@@ -187,6 +187,7 @@ Este fluxo possui um único **stage** chamado Build, e um único agente chamado 
 ```sh
         stage('Test') {
             steps {
+                sh 'chmod +x ./jenkins/scripts/test.sh'
                 sh './jenkins/scripts/test.sh'
             }
         }
